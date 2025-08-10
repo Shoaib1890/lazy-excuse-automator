@@ -7,7 +7,7 @@
 
 ## 🌐 Live Demo
 
-[🚀 Click here to try it out]((https://lazyexcuses.netlify.app/))
+[🚀 Click here to try it out](https://lazyexcuses.netlify.app/)
 
 ---
 
