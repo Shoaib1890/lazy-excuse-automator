@@ -8,6 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Playful bright palette (HSL) */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -17,16 +18,17 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Brand & accents */
+    --primary: 267 85% 54%; /* Violet */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 188 100% 90%; /* Aqua tint */
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 349 100% 86%; /* Pop pink */
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -36,23 +38,23 @@ All colors MUST be HSL.
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* Slightly rounder for playful vibe */
 
+    /* Sidebar (kept compatible) */
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Extra design tokens */
+    --brand-1: 267 85% 54%;
+    --brand-2: 199 89% 48%;
+    --brand-3: 47 95% 53%;
+    --primary-glow: 267 85% 64%;
   }
 
   .dark {
@@ -101,5 +103,26 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Utilities - signature flair */
+@layer utilities {
+  .hover-scale { @apply transition-transform duration-200 hover:scale-105; }
+
+  .story-link { position: relative; }
+  .story-link::after {
+    content: "";
+    position: absolute; left: 0; bottom: 0; height: 2px; width: 100%;
+    background: hsl(var(--primary)); transform: scaleX(0); transform-origin: bottom right;
+    transition: transform 300ms ease;
+  }
+  .story-link:hover::after { transform: scaleX(1); transform-origin: bottom left; }
+
+  .bg-hero {
+    background:
+      radial-gradient(1200px 600px at 10% -10%, hsl(var(--brand-2) / 0.35), transparent 40%),
+      radial-gradient(900px 500px at 90% 0%, hsl(var(--accent) / 0.35), transparent 40%),
+      linear-gradient(180deg, hsl(var(--background)), hsl(var(--secondary) / 0.35));
   }
 }
