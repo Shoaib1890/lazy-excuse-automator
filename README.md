@@ -1,73 +1,105 @@
-# Welcome to your Lovable project
+💤 Auto-Excuse Generator
+Because thinking of excuses is hard work — let the app do it for you!
 
-## Project info
+📖 Overview
+The Auto-Excuse Generator is a playful web app built for the Lazy Day Automation Challenge.
+With just one click, it generates believable or hilariously absurd excuses so you can skip meetings, classes, or tasks without lifting a mental finger.
 
-**URL**: https://lovable.dev/projects/42283985-fdca-402c-b7b8-632961c9f88b
+🚀 Features
+🎯 One-Click Excuse Generation – Never run out of creative get-out-of-anything excuses.
 
-## How can I edit this code?
+📊 Laziness Level Slider – Choose between:
 
-There are several ways of editing your application.
+Low (realistic excuses)
 
-**Use Lovable**
+Medium (somewhat believable)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/42283985-fdca-402c-b7b8-632961c9f88b) and start prompting.
+High (ridiculously over-the-top)
 
-Changes made via Lovable will be committed automatically to this repo.
+📋 Copy to Clipboard – Send your excuse instantly.
 
-**Use your preferred IDE**
+📸 Optional Meme/Screenshot Mode – Generates a “proof” screenshot for extra believability.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+📱 Mobile-Friendly – Works seamlessly on your phone.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+🎨 Fun & Colorful UI – Bright buttons, smooth animations, and playful vibes.
 
-Follow these steps:
+💡 Example Excuses
+Low Laziness
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+"I have a mild fever and don’t want to risk it."
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+"Power outage here, can’t join."
 
-# Step 3: Install the necessary dependencies.
-npm i
+"My WiFi is unstable today."
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+"Family emergency came up."
+
+"I’m waiting for a repair person."
+
+Medium Laziness
+
+"Laptop is updating for the next 3 hours."
+
+"WiFi is acting like it’s on vacation."
+
+"Phone battery is dead and charger broke."
+
+"My Zoom isn’t working for some reason."
+
+"I have unexpected guests at home."
+
+High Laziness
+
+"Neighbour’s cow escaped, I’m helping catch it."
+
+"Accidentally joined a yoga retreat over Zoom."
+
+"My cat scheduled a nap for me."
+
+"I’m beta testing a new mattress."
+
+"Trying to teach my plants how to photosynthesize faster."
+
+🛠 Tech Stack
+Frontend: React, TailwindCSS
+
+Utilities: html2canvas (for fake screenshot mode)
+
+Hosting: Vercel / Netlify
+
+📂 Project Setup
+1️⃣ Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/your-username/auto-excuse-generator.git
+cd auto-excuse-generator
+2️⃣ Install Dependencies
+bash
+Copy
+Edit
+npm install
+3️⃣ Run Locally
+bash
+Copy
+Edit
 npm run dev
-```
+Open http://localhost:5173 (or your port) in your browser.
 
-**Edit a file directly in GitHub**
+4️⃣ Build for Production
+bash
+Copy
+Edit
+npm run build
+📹 Submission Info
+This project was built for the Lazy Day Automation Challenge.
+It automates the art of making excuses, combining creativity and laziness into one click.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🏆 Credits
+Developer: Your Name
 
-**Use GitHub Codespaces**
+Event: Lazy Day Automation Challenge
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Inspiration: My eternal desire to not leave bed.
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/42283985-fdca-402c-b7b8-632961c9f88b) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
