@@ -77,7 +77,4 @@ npm install
 
 # 3. Run locally
 npm run dev
-# Open http://localhost:5173 in your browser
-
-# 4. Build for production
-npm run build
+# Open http://localhost:8080 in your browser
