@@ -5,6 +5,12 @@
 
 ---
 
+## 🌐 Live Demo
+
+[🚀 Click here to try it out]((https://lazyexcuses.netlify.app/))
+
+---
+
 ## 📖 Overview
 
 The **Auto-Excuse Generator** is a playful web app that instantly creates believable or hilariously absurd excuses so you can skip meetings, classes, or tasks without lifting a mental finger.  
